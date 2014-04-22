@@ -1,0 +1,17 @@
+<template name="main">
+	<div id="outer">
+		{{> loginButtons}}
+		{{#each tasks}}
+			<div class="task btn btn-large btn-block {{colColor}} {{isSelected}}">{{title}}</div>
+		{{else}}
+			<h2>No Tasks</h2>
+		{{/each}}
+
+	<div id="increment" class="btn btn-block">&gt;</div>
+
+	</div>
+</template>
+
+<body>
+	{{> main}}
+</body>
